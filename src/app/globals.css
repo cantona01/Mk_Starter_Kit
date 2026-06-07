@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 220 90% 56%;
+  --secondary: 240 10% 20%;
+  --destructive: 0 84% 60%;
+  --muted: 210 11% 71%;
+  --accent: 280 85% 67%;
+  --radius: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: 220 90% 56%;
+    --secondary: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --muted: 220 13% 40%;
+    --accent: 280 85% 67%;
+  }
+}
+
+body {
+  background-color: white;
+  color: #1a1a1a;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: white;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
